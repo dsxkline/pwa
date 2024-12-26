@@ -1,16 +1,15 @@
 {
-    "name": "My App",
-    "short_name": "My App",
-    "start_url": "/pwa/index.html",
+    "short_name": "Aardvark",
+    "name": "Aardvark: the app for aardvarks",
     "display": "standalone",
-    "orientation": "portrait",
-    "background_color": "#000000",
-    "theme_color": "#000000",
+    "id": "/?source=pwa",
+    "start_url": "/?source=pwa",
     "icons": [
         {
             "src": "logo-144.png",
-            "sizes": "144x144",
-            "type": "image/png"
+            "sizes": "any",
+            "type": "image/png",
+            "purpose": "any"
         }
     ]
 }
