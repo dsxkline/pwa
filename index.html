@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>Document</title>
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+    <h1>Hello World</h1>
+    <button id="install" style="display: none" onclick="pwaEvent.prompt();">安装</button>
+    
+</body>
+</html>
+
+<script>
+	let pwaEvent = null;
+	window.addEventListener("beforeinstallprompt", (e) => {
+		pwaEvent = e;
+		console.log("pwaEvent", pwaEvent);
+		document.getElementById("install").style.display = "block";
+		pwaEvent.userChoice.then((res) => {
+			console.log(res.outcome);
+		});
+	});
+</script>
