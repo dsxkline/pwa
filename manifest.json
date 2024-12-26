@@ -2,8 +2,8 @@
     "short_name": "Aardvark",
     "name": "Aardvark: the app for aardvarks",
     "display": "standalone",
-    "id": "/pwa?source=pwa",
-    "start_url": "/pwa?source=pwa",
+    "id": "./",
+    "start_url": "./",
     "icons": [
         {
             "src": "apple-touch-icon.png",
